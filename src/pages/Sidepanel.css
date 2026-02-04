@@ -1,0 +1,97 @@
+.side-panel {
+  background-color: #202031;
+  height: 100%;
+  width: 300px;
+  position: fixed; 
+  z-index: 1001;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+.logo-side-panel {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0.05rem;
+  color: #E2E8F8;
+  padding-left: 15px;
+  
+}
+
+.side-panel {
+  width: 260px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a1b2e, #121321);
+  color: #ffffff;
+  padding: 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  transition: width 0.25s ease;
+}
+
+.side-panel.collapsed {
+  width: 72px;
+  padding: 16px 10px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+.panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.side-panel.collapsed .menu-item {
+  justify-content: center;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  opacity: 0.85;
+  filter: invert(1);
+}
+
