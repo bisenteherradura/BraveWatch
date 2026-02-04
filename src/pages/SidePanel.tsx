@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidepanel.css";
-import logsIcon from "../assets/search.png"
-import cameraIcon from "../assets/camera.png"
+import { Search } from "lucide-react";
+import { Camera } from "lucide-react";
 
 const SidePanel: React.FC = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -21,12 +21,12 @@ const SidePanel: React.FC = () => {
 
       <div className="panel-content">
         <div className="menu-item">
-          <img src={logsIcon} alt="Entry Logs" className="icon" />
+          <Search size={20} className="icon" />
           {!collapsed && <span>Entry Logs</span>}
         </div>
 
         <div className="menu-item">
-          <img src={cameraIcon} alt="Cameras" className="icon" />
+            <Camera size={20} className="icon"/>
           {!collapsed && <span>Cameras</span>}
         </div>
       </div>
